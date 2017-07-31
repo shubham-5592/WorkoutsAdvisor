@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.old.trafford.shubham.workoutsadvisor.FindWorkoutActivity"
+    tools:showIn="@layout/activity_find_workout"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workoutType"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/workout_types"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findWorkout"
+        android:text="@string/find_workout"
+        android:layout_below="@+id/workoutType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:onClick="onClickFindWorkout"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workout"
+        android:text="@string/workout"
+        android:layout_below="@+id/findWorkout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+
+</RelativeLayout>
